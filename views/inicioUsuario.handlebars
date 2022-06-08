@@ -1,0 +1,33 @@
+
+{{>menssagem}}
+
+
+<h2>Usuários</h2>
+
+<a href="/cadastrar/usuario"><button class="btn btn-warning">Cadastrar Usuário</button></a>
+<br>
+<hr>
+<table class="table" class="tabelaUsuarios">
+    <thead>
+        <tr>
+             <th scope="col">Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Senha</th>
+           </tr>
+    </thead>
+
+<tbody>
+    {{#each usuario}}
+    <tr>
+        <td>{{id}}</td>
+        <td>{{email}}</td>
+        <td>{{senha}}</td>
+        
+         
+        {{!--<td>
+            <a href="/editar/{{id}}"><button type="submit" class="btn btn-warning" id="btnEditarIn">Editar</button></a>
+            <a href="/removerIngresso/{{id}}"><button type="submit" class="btn btn-danger" id="btnApagarIn">Apagar</button></a>
+        </td>--}}
+    </tr>
+    {{/each}}
+</tbody>

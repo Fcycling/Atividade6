@@ -1,0 +1,25 @@
+<h2>Editando o Ingresso com ID {{idIngresso}}</h2>
+
+<form action="/ediReq/{{idIngresso}}" method="post">
+
+<div class="mb-3">
+    <select placeholder="Selecionar Categoria" class="form-select" aria-label="Default select example" name="categoriaIngresso">
+  <!--<option>Selecionar Categoria</option>-->
+  <option value="Vip">Vip</option>
+  <option value="Normal">Normal</option>
+  </select>
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Assento</label>
+    <input class="form-control" type="text" name="assentoIngresso" value="{{assentoIngresso}}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Preço</label>
+    <input class="form-control" type="text" name="precoIngresso" value="{{precoIngresso}}">
+</div>
+
+<button type="submit" class="btn btn-primary">Atualizar</button>
+
+</form>

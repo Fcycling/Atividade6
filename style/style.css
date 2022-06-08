@@ -1,0 +1,117 @@
+.gradiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #2FA4FF,#00B4D8,#5D8BF4,#42C2FF );
+    background-size: 350% 350%;
+    animation: colors 15s ease infinite;
+
+}
+body {
+    background-color:#C1CDCD;
+}
+    
+    
+    
+    
+    @keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{background-position:100% 50%}
+    
+    100%{background-position:0% 50%}}
+    
+th,td{
+    text-align: center;
+}
+
+table{
+    border: 3px groove
+}
+   
+    
+   #botaoLimpar{
+       color:#97FFFF;
+       font-family: "Syne Mono";
+   }
+   
+   #botaoCadastrarIn{
+       color: #ffffff;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   #btnPesquisarIn{
+    font-family: "Palatino Linotype", "Palatino LT STD","Book Antiqua", Georgia, serif;
+   }
+   
+   
+   #botaoApagarIn{
+       background-color: #4F94CD;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   #botaoVoltarInicioIn{
+       background-color: #C6E2FF;
+       color:#000000;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   #btnEditarIn{
+       background-color: #00FF00;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   #btnApagarIn{
+       background-color: #00FF00;
+       color: #000000;
+       
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   #btnIrIN{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+    /*edição botões evento*/
+    
+   #botaoApagarEv{
+       background-color: #4F94CD;
+       font-family: Candara;
+   }
+   #btnVoltarinicioEv{
+       background-color: #C6E2FF;
+       color: #000000;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       
+   }
+   #btnEditarEv{
+       background-color: #00FF00;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   #btnApagarEv{
+       background-color: #00FF00;
+       color: #000000;
+       font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   #botaoLimparEv{
+    color:#97FFFF;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+#botaoCadastrarEv{
+    color:#FFFFFF;
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+   
+   #btnPesquisarEV{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   #btnIrEV{
+    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+   }
+   
+   

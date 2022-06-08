@@ -1,0 +1,51 @@
+<hr>
+<a href="/cadastroEvento"><button type="button" class="btn btn-info" id="botaoCadastrarEv">Cadastrar Evento</button></a>
+
+<a href="/ingressos"><button type="button" class="btn btn-outline-primary" id="btnIrIN">Ver Ingressos</button></a>
+<hr>
+<form action="/pesquisa" method="post">
+<input type="search" name="artista" class="form-control" placeholder="Pesquisar artista">
+<button class="btn btn-light" type="submit" style="margin-top: 5px" id="btnPesquisarEV">Pesquisar</button>
+<a href="/eventos"><button type="button" class="btn btn-secondary btn-sm" style="margin-top: 5px" id="botaoLimparEv">Limpar Seleção</button></a>
+</form>
+
+<hr>
+
+
+<table class="table" class="fundo">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Artista</th>
+            <th scope="col">Data</th>
+            <th scope="col">Local</th>
+            <th scope="col">Quantidade Ingressos</th>
+        </tr>
+    </thead>
+
+<tbody>
+    {{#each eventos}}
+    <tr>
+        <th>{{id}}</th>
+        <td>{{artista}}</td>
+        <td>{{data}}</td>
+        <td>{{local}}</td>
+        <td>{{qtdIngressos}}</td>
+        <td>
+            <a href="/editarEvento/{{id}}"><button type="submit" class="btn btn-warning" id="btnEditarEv">Editar</button></a>
+            <a href="/removerEvento/{{id}}"><button type="submit" class="btn btn-warning" id="btnApagarEv">Apagar</button></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+
+</table>
+
+<div class="d-flex justify-content-center">
+                 <a href="/apagarEventos"><button type="submit" class="btn btn-success" id="botaoApagarEv">Apagar Todos</button></a>
+            </div>
+            <hr>
+            
+            <div class="d-flex justify-content-center">
+                 <a href="/"><button type="submit" class="btn btn-secondary btn-sm" id="btnVoltarinicioEv">Voltar para Página Inicial</button></a>
+            </div>

@@ -1,0 +1,53 @@
+<hr>
+<div class="fundo">
+
+<a href="/cadastrar"><button type="button" class="btn btn-info" id="botaoCadastrarIn">Cadastrar Ingresso</button></a>
+
+<a href="/eventos"><button type="button" class="btn btn-outline-primary" id="btnIrEV"> Ver Eventos</button></a>
+
+
+  <hr>
+<form action="/pesquisaIngresso" method="post">
+<input type="search" name="categoria" class="form-control" placeholder="Pesquisar Assento">
+<button class="btn btn-light" type="submit" style="margin-top: 5px" id="btnPesquisarIn">Pesquisar</button>
+<a href="/ingressos"><button type="button" class="btn btn-secondary btn-sm" style="margin-top: 5px" id="botaoLimpar">Limpar Seleção</button></a>
+</form>
+<hr>
+
+
+<table class="table" class="tabelaIngressos">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Assento</th>
+            <th scope="col">Preço</th>
+            
+        </tr>
+    </thead>
+
+<tbody>
+    {{#each ingresso}}
+    <tr>
+        <th>{{id}}</th>
+        <td>{{categoria}}</td>
+        <td>{{assento}}</td>
+        <td>{{preco}}</td>
+         
+        <td>
+            <a href="/editar/{{id}}"><button type="submit" class="btn btn-warning" id="btnEditarIn">Editar</button></a>
+            <a href="/removerIngresso/{{id}}"><button type="submit" class="btn btn-danger" id="btnApagarIn">Apagar</button></a>
+        </td>
+    </tr>
+    {{/each}}
+</tbody>
+
+</table>
+<div class="d-flex justify-content-center">
+                 <a href="/excluirIngressos"><button type="submit" class="btn btn-success" id="botaoApagarIn">Apagar Todos</button></a>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center">
+                 <a href="/"><button type="submit" class="btn btn-secondary btn-sm" id="botaoVoltarInicioIn">Voltar para Página Inicial</button></a>
+            </div>
+</div>

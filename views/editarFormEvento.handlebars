@@ -1,0 +1,27 @@
+<h2>Editando Evento com ID {{idEvento}}</h2>
+
+<form action="/ediReqEvento/{{idEvento}}" method="post">
+
+<div class="mb-3">
+    <label class="form-label">Artista</label>
+    <input class="form-control" type="text" name="artistaEvento" value="{{artistaEvento}}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Local do Evento</label>
+    <input class="form-control" type="text" name="localEvento" value="{{localEvento}}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Data do Evento</label>
+    <input class="form-control" type="date" name="dataEvento" value="{{dataEvento}}">
+</div>
+
+<div class="mb-3">
+    <label class="form-label">Quantidade de Ingresso</label>
+    <input class="form-control" type="text" name="qtdIngressos" value="{{qtdIngressos}}">
+</div>
+
+<button type="submit" class="btn btn-primary">Atualizar</button>
+
+</form>
