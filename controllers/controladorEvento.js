@@ -143,8 +143,8 @@ eventoControlador.montarReqEdicaoEvento = function(req, res){
 eventoControlador.montarReqDelete= function(req, res){
     axios.delete('/remover/'+req.params.id,{
         proxy: {
-            host: 'localhost',
-            port: 3000
+            host: '18.215.162.117',
+            port: 3306
         }
     }).then(function () {
         res.status(200).redirect("/eventos");

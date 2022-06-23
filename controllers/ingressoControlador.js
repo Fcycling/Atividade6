@@ -106,8 +106,8 @@ ingressoControlador.montarReqEdicao = function(req, res){
 ingressoControlador.montarReqDelete = function(req,res){
     axios.delete('/removerIngresso/'+req.params.id,{
         proxy:{
-            host:'localhost',
-            port:3000
+            host:'18.215.162.117',
+            port:3306
         }
     }).then(function(){
         res.status(200).redirect("/ingressos")
